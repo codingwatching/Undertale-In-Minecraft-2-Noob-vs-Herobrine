@@ -1,0 +1,9 @@
+name: Build # Имя рабочего процесса
+on: workflow_dispatch # Условия запуска события
+jobs:
+  firstjob: # Имя задачи
+    runs-on: ubuntu-latest # Среда выполнения
+    steps:
+      - name: Print Greetings # Имя шага
+        run: echo "Hello World"
+    
